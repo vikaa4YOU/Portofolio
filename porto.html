@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portofolio Home</title>
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="logo">
+        
+        <nav class="navbar">
+            <ul class="nav-menu">
+                
+                <li><a href="porto.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skill2.html">Skill</a></li>
+                <li><a href="Project.html">Project</a></li>
+                <li><a href="medsos.html">Media</a></li>
+
+
+
+            </ul>
+            </ul>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home.jpg">
+            <div class="zoom-container">
+            <img src="home.jpg" alt="" class="imgg2">
+        </div>
+        </div>
+        <div class="home-content">
+            <h5 class="judul">WEB DESIGNER</h5>
+           <h1><span>FREELANCE ILUSTRATION ARTICS</span></h1> 
+           <h3 class="typing text">Find Me<span></span></h3>
+           <div class="sosial-media-icon">
+            <a class="social-media-icon" href="https://www.instagram.com/_vikaaluvy?igsh=bnliMzV1a3Z1NTA5"><span class="fab fa-instagram"></span></a>
+            <a class="social-media-icon" href="https://www.facebook.com/dollevanthii?mibextid=LQQJ4dB"><span class="fab fa-facebook"></span></a>
+           </div>
+        </div>
+    </section>    
+    <foooter class="copyfooter">
+        Copy Right 2024
+    </foooter>
+</body>
+</html>
+
+<style>
+    /* Styling dasar untuk body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color:white;
+    color: pink;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+/* Kontainer untuk memastikan efek rapi */
+.zoom-container {
+  overflow: hidden; /* Agar elemen tidak keluar dari batas */
+  display: inline-block;
+  border-radius: 10px; /* Opsional: untuk sudut melengkung */
+}
+
+/* Gaya dasar gambar */
+.zoom-image {
+  width: 100%;
+  transition: transform 0.5s ease; /* Animasi transisi yang halus */
+}
+
+/* Efek zoom saat hover */
+.zoom-container:hover .zoom-image {
+  transform: scale(1.2); /* Zoom-in 20% */
+}
+
+
+nav ul li a {
+  text-decoration: none;
+  color: black; /* Warna default */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav ul li a.active {
+  color: white; /* Warna teks */
+  background-color: pink; /* Warna latar belakang */
+}
+
+
+/* Navbar styling */
+.navbar {
+    background-color:white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+.nav-item a {
+    text-decoration: none;
+    color:black;
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+    color: pink; /* Warna hover */
+}
+
+/* Gaya untuk item aktif */
+.nav-item.active a {
+    color: pink; /* Warna teks aktif */
+}
+
+.nav-item.active a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: pink;
+    bottom: -5px;
+    left: 0;
+}
+
+</style>

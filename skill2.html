@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio skill</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="logo">
+        
+        <nav class="navbar">
+            <ul class="nav-menu">
+                
+                <li><a href="porto.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skill2.html" class="active">Skill</a></li>
+                <li><a href="Project.html">Project</a></li>
+                <li><a href="medsos.html">Media</a></li>
+
+
+
+            </ul>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="title">MY SKILLS</h1>
+    <div class="skills-container">
+        <div class="skill-box">
+            <img src="vscode.jpeg" alt="Visual Studio Code">
+            <p>VS CODE</p>
+            <button class="detail-button">Detail</button>
+        </div>
+        <div class="skill-box">
+            <img src="sublime.png" alt="Sublime Text">
+            <p>SUBLIME TEXT</p>
+            <button class="detail-button">Detail</button>
+        </div>
+        <div class="skill-box">
+            <img src="figma.png" alt="Figma">
+            <p>FIGMA</p>
+            <button class="detail-button">Detail</button>
+        </div>
+        <div class="skill-box">
+            <img src="canva.png" alt="Canva">
+            <p>CANVA</p>
+            <button class="detail-button">Detail</button>
+        </div>
+    </div>
+    <foooter class="copyfooter">
+        Copy Right 2024
+    </foooter>
+</body>
+</html>
+
+<style>
+  /* Styling dasar */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #333;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black; /* Warna default */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav ul li a.active {
+  color: white; /* Warna teks */
+  background-color: pink; /* Warna latar belakang */
+}
+
+header{
+    margin-top:10px;
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding:1rem 9%;
+    background-color:#fff;
+    filter:drop-shadow(10px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:100;
+}
+
+/* Kontainer skill */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.copyfooter {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:plum;
+   color: white;
+   text-align: center;
+ }
+/* Box skill */
+.skill-box {
+    width: 200px; /* Membuat box lebih besar */
+    background-color: #f3c4e3;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-box img {
+    width: 100%; /* Menyesuaikan gambar dengan ukuran box */
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.skill-box p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0 0 15px 0;
+}
+
+/* Tombol Detail */
+.detail-button {
+    display: block;
+    width: 100%; /* Tombol memanjang sesuai ukuran box */
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color:plum;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.detail-button:hover {
+    background-color: #540a8d;
+}
+
+    /* Styling dasar untuk body */
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color:white;
+    color: pink;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color:white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color:black;
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+    color: pink; /* Warna hover */
+}
+
+/* Gaya untuk item aktif */
+.nav-item.active a {
+    color: pink; /* Warna teks aktif */
+}
+
+.nav-item.active a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: pink;
+    bottom: -5px;
+    left: 0;
+}
+
+.topnav {
+    background-color:#fff;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color:pink;
+    border-radius: 25px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: purple;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color:pink;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+</style>

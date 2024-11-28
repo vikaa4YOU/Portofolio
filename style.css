@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration:none;
+    border:none;
+    outline:none;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    font: size 62.5%;
+}
+
+body{
+    width:100%;
+    height:100vh;
+    overflow-x:hidden;
+    background-color: white;
+    color:plum;
+}
+
+.topnav {
+    background-color:#fff;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color:pink;
+    border-radius: 25px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: purple;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color:pink;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+header{
+    margin-top:10px;
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding:1rem 9%;
+    background-color:#fff;
+    filter:drop-shadow(10px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:100;
+}
+
+.imgg2{
+    width: 70%;
+    height: 70%;
+    
+}
+
+.about2-img{
+    width: 270px;
+    height: 270x;
+    margin-top: 50px;
+
+}
+
+.log-abot{
+    width: 120px;
+    height: 25px;
+    margin-bottom: 150px;
+    right: 20px;
+}
+
+.text-h1{
+    color: black;
+    
+}
+.span-2{
+    text-align: center;
+    margin-top: 100px;
+    padding-left: 20px;
+}
+.hobby{
+    padding-left: 110px;
+    color: black;
+    
+}
+
+.Project{
+    font-size: medium;
+    font-weight: bold;
+    word-spacing: 150px;
+    padding-left: 110px;
+}
+
+.btn btn-dark{
+    height: 100px;
+    width: 180px;
+    color: pink;
+    align-items: center;
+    font-family: Helvetica Bold Black;
+    margin-bottom: 20px;
+}
+
+.Project2{
+    font-size: small;
+    font-weight: bold;
+    word-spacing: 50px;
+    padding-left: 110px;
+    color: black;
+}
+
+.about-container {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+  }
+  
+  .logo img {
+    width: 24px; 
+    height: 24px;
+  }
+  
+  .about-text {
+    font-size: 16px; 
+    font-weight: bold; 
+    color: black;
+  }
+
+.logo{
+    font-size: 3rem;
+    color:plum;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover{
+    transform:scale(1.1);
+}
+
+nav a{
+    font-size:20px;
+    color: rgb(0, 0, 0);
+    margin-left:4rem;
+    font-weight: 500;
+    transition: 0.3 ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a:active{
+    color:plum;
+    border-bottom: 3px solid pink;
+}
+
+@media(max-width:995px){
+nav{
+    position:absolute;
+    top: 100%;
+    right: 0%;
+    width: 40%;
+    border-left: 3px solid pink;
+    border-bottom: 3px solid pink;
+    border-bottom-left-radius: 2rem;
+    padding:1rem solid;
+    background-color: white;
+    border-top: 0.1rem solid white;
+}
+
+nav.active{
+    display:block;
+}
+
+ nav.a{
+    display: block;
+    font-size: 2rem;
+    margin: 3rem
+ }
+
+ nav a:hover,
+ nav a.active{
+    padding: 1rem;
+    border-radius: 0,5rem;
+    border-bottom: 0,5rem;
+ }
+}
+
+ section{
+    min-height: 100vh;
+    padding:5rem 9% 5rem;
+ }
+
+ .home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:8rem;
+    background-color: white;
+ }
+
+ .home .home-content h1{
+   font-size: 45px;
+   font-weight:700;
+   line-height:1.3;
+ }
+
+ 
+ .copyfooter {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:plum;
+   color: white;
+   text-align: center;
+ }
+ 
+.judul{
+    padding-left: 110px;
+    font-size:30px ;
+    font-family:kosolas;
+    color: black;
+}
+
+.judul-2{
+    padding-left: 110px;
+    font-size:22px ;
+    font-family:kosolas;
+    color: rgb(0, 0, 0);
+}
+
+ span{
+    color: rgb(0, 0, 0);
+ }
+
+ .span-2{
+    color: rgb(0, 0, 0);
+ }
+ 
+ .home-content h3{
+    font-size: 40px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: rgb(240, 180, 189);
+ }
+
+ .home-img{
+    border-radius: 50%;
+ }
+
+ .home-img img{
+    position: relative;
+    width: 32fw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid;
+    cursor: pointer;
+    transition: 0.2s linear;
+ }
+
+.home-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
+} 
+
+.sosial-media-icon{
+        padding: 5px;
+        background: pink;
+        color: #fff;
+        border-radius: 4px;
+    }
+    
+    a.social-media-icon:hover{
+        background: #fff!important;
+        color: pink!important;
+    }
+
+
+.btn:hover{
+    transform: scale3d(1.03);
+    background-color: pink;
+    color: white;
+    box-shadow: 0 0 25px;
+}
+
+.typing-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing-text{
+    position: relative;
+}
+
+.typing-text span::before{
+    content: "Software Developer";
+    color: rgb(0, 0, 0);
+    animation: words 20s infinite;
+}
+
+.typing-text span::after{
+    content: "";
+    background-color: white;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3pxsolid pink;
+    right: -8;
+    animation: cursor 0.6 infinite;
+}
+
+@keyframes cursor{
+    to{
+        border-left: 3px solid plum;  
+    }
+}
+
+
+.wordd{
+    width: 2px;
+    height: 5px;
+    margin-top: 200px;
+    word-spacing: 50px;
+}
+
+.vscode{
+    width: 30px;
+    height: 30px;
+    margin-top: 200px;
+}
+
+.sublime{
+    width: 30px;
+    height: 30px;
+    margin-top: 200px;
+}
+
+.ffe{
+    width: 30px;
+    height: 30px;
+    margin-top: 200px;
+    margin-left: 2px;
+}
+
+.judul-skill{
+    align-items: center;
+    color: black;
+    font-family: Helvetica;
+    text-align: center;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-template-areas:
+    "image1 image2 image3 image4"
+    "text text text text";
+    justify-content: space-between;
+}
+
+.container-2{
+  width: 100px;
+  margin-bottom: 100px;
+  justify-content: space-between;
+  padding: 10px;
+  margin-left: 10px;
+
+}
+
+.img-1{
+ justify-content: space-between;
+}
+
+.img-2{
+    justify-content: space-between;
+}
+
+.img-3{
+    justify-content: space-between;
+}
+
+.img-4{
+    justify-content: space-between;
+}
+
+.img-5{
+    justify-content: space-between;
+}
+.box{
+    background: black;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px black;
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
+    text-align: center;
+}
+
+
+.container2{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.txt-media{
+    margin-left: 100px;
+    margin-top: 70px;
+    
+}
+
+.portofolio {
+    background: var(--second-bg-color);
+}
+
+.portofolio h2 {
+    margin-bottom: 4rem;
+}
+
+.portofolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.portofolio-container .portofolio-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.portofolio-box img {
+    width: 100%;
+    transition: .5s ease;
+}
+
+.portofolio-box:hover img {
+    transform: scale(1.1);
+}
+
+.portofolio-box .portofolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.portofolio-box:hover .portofolio-layer {
+    transform: translateY(0);
+}
+
+.portofolio-layer h4 {
+    font-size: 3rem;
+}
+
+.portofolio-layer p {
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+    text-align: center;
+}
+
+.portofolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+
+.portofolio-layer a i {
+    font-size: 2rem;
+    color: var(--second-bg-color);
+}
+
